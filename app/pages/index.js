@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Firstitem from "@/components/Firstitem";
+import HomeDropdown from "@/components/Dropdown";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +19,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Easy Components</title>
+        <title>SecurePlace</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+      <Header />  
         <main className={styles.main}>
-          <Firstitem />
+          <HomeDropdown />
         </main>
-      <Footer />
       </div>
     </>
   );
