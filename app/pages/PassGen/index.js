@@ -33,6 +33,7 @@ const PassGen = () => {
     return (
         <>
         <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+            <div className={styles.card}>
             <Header />
             <div className={styles.passgencard}>
 
@@ -44,6 +45,7 @@ const PassGen = () => {
                     <p>{password}</p>
                 </div>
             )}
+            </div>
             </div>
         </div>
         </>

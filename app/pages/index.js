@@ -24,10 +24,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
-      <Header />  
+        <div className={styles.card}>
+        <Header />  
         <main className={styles.main}>
           <HomeDropdown />
         </main>
+        </div>
       </div>
     </>
   );

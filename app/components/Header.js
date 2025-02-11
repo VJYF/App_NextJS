@@ -6,7 +6,7 @@ export default function Header() {
     return ( 
         < >
         <nav className={styles.nav}>
-        <Link href="/">
+        <Link className={styles.navlink} href="/">
             <Image
               aria-hidden
               src="/home.svg"
@@ -16,7 +16,7 @@ export default function Header() {
               />
             Home
           </Link>
-          <Link href="/PassGen">
+          <Link className={styles.navlink} href="/PassGen">
             <Image
               aria-hidden
               src="/file.svg"
@@ -26,7 +26,7 @@ export default function Header() {
               />
             PassGen
           </Link>
-          <Link href="/Antivirus">
+          <Link className={styles.navlink} href="/AV">
             <Image
               aria-hidden
               src="/window.svg"
@@ -36,7 +36,7 @@ export default function Header() {
               />
             Antivirus
           </Link>
-          <Link href="/FindYou">
+          <Link className={styles.navlink} href="/FindYou">
             <Image
               aria-hidden
               src="/globe.svg"
