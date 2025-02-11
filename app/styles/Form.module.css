@@ -1,0 +1,16 @@
+.formCard{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
